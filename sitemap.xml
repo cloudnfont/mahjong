@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.posts %}
+    <url>
+        <loc>{{https://cloudnfont.github.io/mahjong/}}{{ post.url | remove: 'index.html' }}</loc>
+    </url>
+    {% endfor %}
+
+    {% for page in site.pages %}
+    {% if page.layout != nil %}
+    {% if page.layout != 'feed' %}
+    <url>
+        <loc>{{https://cloudnfont.github.io/mahjong/3-trik-bermain-black-scatter-hitam-mahjong-ways3.html
+}}{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+     <url>
+        <loc>{{https://cloudnfont.github.io/mahjong/pola-games-mahjong-ways3-berhasil-kurang-lebih-1-jam.html
+}}{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+     <url>
+        <loc>{{https://cloudnfont.github.io/mahjong/kemenangan-setiap-harinya-di-starlight-princess-1000.html
+}}{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+     <url>
+        <loc>{{https://cloudnfont.github.io/mahjong/menang-ratusan-juta-bermain-di-games-wild-bounty-showdown.html
+}}{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+     <url>
+        <loc>{{https://cloudnfont.github.io/mahjong/lucky-neko-bersaing-dengan-mahjong-ways.html
+}}{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+</urlset>
